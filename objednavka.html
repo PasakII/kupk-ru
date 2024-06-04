@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objednávka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="center">
+        <h1>KUPKÁRU <a href="index.html"><img src="images/ikonkafirmy.jpg" alt="kokoshalien" height="50" width="50" class="ikonka"></a></h1> 
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Domů</a></li>
+                <li><a href="objednavka.html">Objednávka</a></li>
+                <li><a href="onas.html">O nás</a></li>
+                <li><a href="rarity.html">RARITY</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="/odeslat-objednavku" method="post">
+            <table>
+            <tr>
+                <td class="text-center"><label for="jmeno">Jméno & Příjmení:</label></td>
+                <td><input type="text" id="jmeno" name="jmeno" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"> <label for="datum">Datum narození:</label> </td>
+                <td><input type="date" name="datum"></td>
+                
+            </tr>
+            <tr>
+                <td class="text-center"><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"><label for="tel">Tel. číslo:</label></td>
+                <td><input type="tel" id="tel" name="tel" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"><label for="mesto">Město:</label></td>
+                <td><input type="text" id="mesto" name="mesto" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"><label for="uliceacislo">Ulice a Číslo:</label></td>
+                <td><input type="text" id="uliceacislo" name="uliceacislo" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"><label for="psc">PSČ:</label></td>
+                <td><input type="text" id="psc" name="psc" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"><label for="Země">Země:</td> 
+                <td>
+                    <select name="zeme" id="zeme">
+                    <option value="eu">EU</option>
+                    <option value="neeu">Mimo EU</option>
+                </label>
+                </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="text-center"><label for="poznamky">Objednávka, výběr auta:</label></td>
+                <td><textarea id="poznamky" name="poznamky" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td class="text-center"><label for="podpis">Podpis</label></td>
+                <td><textarea name="podpis" cols="15" rows="5" placeholder="PODPIS"></textarea>
+                    <input type="submit" value="Potvrdit">
+                    <input type="reset" value="Resetovat">
+                </td>
+            </tr>
+            <tr>
+                <td class="start"><label for="souhlas">Zaškrtnutím tohoto pole souhlasíte s <a href="obchodnipodminky.html" class="text-warning">obchodními podmínkami</a> a že jste se s nimi seznámil/a.</label></td>
+                <td><input type="checkbox" id="souhlas" name="souhlas" required></td>
+            </tr>
+            <tr>
+                <td class="text-center"><input type="submit" value="Odeslat objednávku"></td>
+            </tr>
+            </table>
+    
+        </form>
+    </main>
+
+    <img src="images/spravnavolba.jpg" alt="kokoshalien" height="250" height="250" style="display: block;" class="spravnavolba">
+    
+    <footer class="center">
+        <p>&copy; 2024 KUPKÁRU <a href="index.html"><img src="images/ikonkafirmy.jpg" alt="kokoshalien" height="50" width="50" class="ikonka2"></a></p>
+    </footer>
+</body>
+</html>
